@@ -109,7 +109,7 @@ class TodoViewTestCase (TestCase):
 
         self.assertEqual(response.status_code, 200)
         self.assertEqual(response.templates[0].name, 'todo/detail.html')
-        self.assertEqual(response.context['task'], task)
+        self.assertEqual(response.context['tasks'], task)
 
     def test_detail_get_fall(self):
         client = Client()
