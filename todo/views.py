@@ -29,6 +29,6 @@ def detail(request, task_id):
         raise Http404("Task does not exist")
 
     context = {
-        'tasks': task,
+        'task': task,
     }
     return render(request, 'todo/detail.html', context)
