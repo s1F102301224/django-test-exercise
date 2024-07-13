@@ -24,9 +24,11 @@
 
     <div>
       <a href="{% url 'index' %}">Top</a>
+
       {% if task.id %}
       <a href="{% url 'update' task.id %}">Edit</a>
       {% endif %}
+        <a href="{% url 'delete' task.id %}">Delete</a>
     </div>
   </body>
 
