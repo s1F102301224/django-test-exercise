@@ -6,16 +6,16 @@
     <title>To Do Application</title>
     <meta charset="UTF-8">
     <meta name="author" content="INIAD">
-    <link href="style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="../css/edit.css" rel="stylesheet" type="text/css">
   </head>
 
   <body>
     <h1>Edit task</h1>
-    <p>You can edit tasks from the following form.</p>
+    <p id="box">You can edit tasks from the following form.</p>
     <form action="{% url 'update' task.id %}" method="post">
       {% csrf_token %}
       <div>
-        <label for="titleInput">Title</label><br>
+        <label for="titleInput" >Title</label><br>
         <input id="titleInput" name="title" type="text" placeholder="Input title" value="{{ task.title }}">
       </div>
       <div>
@@ -23,7 +23,7 @@
         <input id="dueInput" name="due_at" type="datetime-local" value="{{ task.due_at |date:"Y-m-d H:i" }}">
       </div>
       <div>
-        <button type="submit">Submit</button>
+        <button type="submit" id="submit">Submit</button>
       </div>
     </form>
     <br>
