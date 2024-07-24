@@ -1,0 +1,26 @@
+h1 {
+    padding: 0.5em;
+    color: #000;
+    background: #ecf8ff;
+    border-left: solid 5px #58b9ff;
+    font-family: serif;
+  }
+
+h2 {
+    padding: 1em;
+    color: #00ff10;
+    background: #ecf8ff;
+    border-left: solid 5px #58b9ff;
+    font-family: serif;
+  }
+#titleInput {
+    background-color: #e3e4ff; 
+}
+
+#dueInput {
+    background-color: #e1f8ff; 
+}
+button {
+    background-color: #ffff00;
+    color: #ffffff;
+}
